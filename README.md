@@ -7,6 +7,50 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Start TechTask
+
+
+
+```sh
+git clone https://github.com/kurnosovmak/techtask.git
+cd techtask
+composer install
+php artisan migrate
+php artisan db:seed --class=ProductSeeder
+php artisan db:seed --class=CategorySeeder
+php artisan serve
+```
+
+## Route 
+
+products route
+
+- /api/v1/product (GET) return all product
+- /api/v1/product/{id} (GET) return product
+- /api/v1/product (POST) create product  
+variables: title(text), price(number), mini_description(text), full_description(text), published(boolen), categories[] (array id category)
+- /api/v1/product/{id} (PATCH) update product  
+variables: title(text), price(number), mini_description(text), full_description(text), published(boolen), categories[] (array id category)
+- /api/v1/product/{id} (DELETE) destroy product
+
+category route
+
+- /api/v1/category (GET) return all categories
+- /api/v1/category/{id} (GET) return category
+- /api/v1/category (POST) create category  
+variables: title(text)
+- /api/v1/category/{id} (PATCH) update category  
+variables: title(text)
+- /api/v1/category/{id} (DELETE) destroy category
+
+search route
+
+- /api/v1/search (GET) return search products 
+
+variables: title(text), min_price(number), max_price(number), remote(удаленные boolean), published(boolean), id_category[] (array id category), title_category(text)
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

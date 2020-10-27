@@ -18,6 +18,10 @@ use Illuminate\Support\Facades\Route;
 //    return $request->user();
 //});
 
-Route::resource('v1/product','ProductController');
-Route::resource('v1/category','CategoryController');
+Route::resource('v1/product','ProductController')->only([
+    'index', 'show', 'store', 'update', 'destroy'
+]);
+Route::resource('v1/category','CategoryController')->only([
+    'index', 'show', 'store', 'update', 'destroy'
+]);
 Route::get('v1/search','SearchProductController@search');
