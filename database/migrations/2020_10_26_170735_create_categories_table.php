@@ -18,9 +18,6 @@ class CreateCategoriesTable extends Migration
             $table->id();
             $table->text('title');
 
-            $table->unsignedBigInteger('categories_id');
-            $table->foreign('categories_id')->references('id')->on('categories');
-
             $table->softDeletes();
             $table->timestamps();
         });

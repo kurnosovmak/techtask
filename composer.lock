@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b56bfb5d21eaae286e532c3ed2f8941",
+    "content-hash": "22edf4f2e84ba0c2f0334e6c53d51628",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4923,16 +4923,16 @@
         },
         {
             "name": "fzaninotto/faker",
-            "version": "v1.9.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f"
+                "reference": "26c3c624bbfd3924e5a36a8c5a077a1fd7f167d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/fc10d778e4b84d5bd315dad194661e091d307c6f",
-                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/26c3c624bbfd3924e5a36a8c5a077a1fd7f167d3",
+                "reference": "26c3c624bbfd3924e5a36a8c5a077a1fd7f167d3",
                 "shasum": ""
             },
             "require": {
@@ -4969,7 +4969,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2019-12-12T13:22:17+00:00"
+            "time": "2020-10-23T12:58:11+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -7006,7 +7006,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "fzaninotto/faker": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

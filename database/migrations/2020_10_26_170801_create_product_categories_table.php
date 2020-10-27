@@ -21,6 +21,7 @@ class CreateProductCategoriesTable extends Migration
             $table->unsignedBigInteger('categories_id');
             $table->foreign('categories_id')->references('id')->on('categories');
 
+            $table->timestamps();
         });
     }
 
